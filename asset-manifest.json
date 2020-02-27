@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/fecofa-match-frontend/static/css/main.d1b05096.chunk.css",
+    "main.js": "/fecofa-match-frontend/static/js/main.a678ab70.chunk.js",
+    "main.js.map": "/fecofa-match-frontend/static/js/main.a678ab70.chunk.js.map",
+    "runtime-main.js": "/fecofa-match-frontend/static/js/runtime-main.35a2aceb.js",
+    "runtime-main.js.map": "/fecofa-match-frontend/static/js/runtime-main.35a2aceb.js.map",
+    "static/js/2.b6250ef2.chunk.js": "/fecofa-match-frontend/static/js/2.b6250ef2.chunk.js",
+    "static/js/2.b6250ef2.chunk.js.map": "/fecofa-match-frontend/static/js/2.b6250ef2.chunk.js.map",
+    "index.html": "/fecofa-match-frontend/index.html",
+    "precache-manifest.0f613a68dab85486402416814d3e6aab.js": "/fecofa-match-frontend/precache-manifest.0f613a68dab85486402416814d3e6aab.js",
+    "service-worker.js": "/fecofa-match-frontend/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/fecofa-match-frontend/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.b6250ef2.chunk.js.LICENSE.txt": "/fecofa-match-frontend/static/js/2.b6250ef2.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/fecofa-match-frontend/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35a2aceb.js",
+    "static/js/2.b6250ef2.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.a678ab70.chunk.js"
+  ]
+}

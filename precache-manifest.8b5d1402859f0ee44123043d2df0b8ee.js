@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7d0807540514035d0146685d1b3277fe",
+    "revision": "ebece48648a245618805a2c10f11fd85",
     "url": "/fecofa-match-frontend/index.html"
   },
   {
-    "revision": "a89740473664863aaa6f",
+    "revision": "3f93f73633da95062864",
     "url": "/fecofa-match-frontend/static/css/main.d1b05096.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fecofa-match-frontend/static/js/2.b6250ef2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a89740473664863aaa6f",
-    "url": "/fecofa-match-frontend/static/js/main.a678ab70.chunk.js"
+    "revision": "3f93f73633da95062864",
+    "url": "/fecofa-match-frontend/static/js/main.2c13e8d4.chunk.js"
   },
   {
     "revision": "ae2d0f2e6996664868d1",

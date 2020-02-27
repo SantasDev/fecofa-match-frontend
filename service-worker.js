@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/fecofa-match-frontend/precache-manifest.0f613a68dab85486402416814d3e6aab.js"
+  "/fecofa-match-frontend/precache-manifest.8b5d1402859f0ee44123043d2df0b8ee.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,15 +1,22 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+
+const navMap=[
+    { name: 'home', path: '/'},
+    { name: 'test', path: '/test'},
+    { name: 'Match', path: '/match'},
+    { name: 'Teams', path: '/teams'},
+];
+
 const LayoutNavBar=()=>(
     <nav className="fc-navbar">
-        <ul>
-            <li>
-                <Link to="/">Home</Link>
+        <ul className="fc-navbar_container">
+            {navMap.map( nav=>(
+            <li className="fc-navbar_container-item">
+                <Link to={nav.path} className="fc-navbar_link centered-item">{nav.name}</Link>
             </li>
-            <li>
-                <Link to="/test">Test</Link>
-            </li>
+            ))}
         </ul>
     </nav>
 );

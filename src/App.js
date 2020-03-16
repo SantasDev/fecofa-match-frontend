@@ -1,25 +1,58 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router} from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import './App.css';
+import FcLayoutHeader from './components/layouts/LayoutHeader';
+import FcLayoutNav from './components/layouts/LayoutNav';
+
+import Pages from './pages';
+
+library.add(fab, faCheckSquare, faCoffee)
+
+const FecofaMenu = [
+  {
+    id: 1,
+    label: 'inicio',
+    link: '/',
+    icon: ''
+  },
+  {
+    id: 2,
+    label: 'Partidos',
+    link: '/matches',
+    icon: ''
+  },
+  {
+    id: 3,
+    label: 'Equipos',
+    link: '/teams',
+    icon: ''
+  },
+  {
+    id: 4,
+    label: 'Jugadores',
+    link: '/players',
+    icon: ''
+  }
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <div className="fc-content_navbar">
+          <FcLayoutNav navigation={FecofaMenu}/>
+        </div>
+        <div className="fc-content">
+          <FcLayoutHeader />
+          <main className="fc-content_main">
+           <Pages />
+          </main>
+        </div>
+      </div>
+    </Router>
   );
 }
 

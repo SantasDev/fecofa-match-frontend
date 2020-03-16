@@ -24,7 +24,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+    - uses: ./
+      with:
+        username: SantasDev
+        password: ${{ secrets.ACCESS_TOKEN }}
     - run: npm ci
     - run: npm run deploy
     - run: npm test

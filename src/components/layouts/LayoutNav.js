@@ -4,12 +4,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const LayoutNavBar=(props)=>(
     <nav className="fc-navbar">
-        <ul>
+        <ul className="fc-navbar_container">
             {props.navigation.map(item=>(
-                <li>
-                    <Link to={ item.link }>
-                        <FontAwesomeIcon icon="check-square" size="2x" />
-                        {item.label}
+                <li className="fc-navbar_container-item" key={ item.id }>
+                    <Link to={ item.link } className="fc-navbar_link" >
+                        <div className="fc-navbar_icon">
+                            <FontAwesomeIcon icon="check-square" size="2x" />
+                        </div>
+                        <span className="fc-navbar_label">
+                            {item.label}
+                        </span>
                     </Link>
                 </li>
             ))}

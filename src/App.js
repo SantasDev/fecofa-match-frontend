@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
@@ -7,8 +7,7 @@ import './App.css';
 import FcLayoutHeader from './components/layouts/LayoutHeader';
 import FcLayoutNav from './components/layouts/LayoutNav';
 
-import HomePage from './pages/Home';
-import TestPage from './pages/Test';
+import Pages from './pages';
 
 library.add(fab, faCheckSquare, faCoffee)
 
@@ -21,18 +20,18 @@ const FecofaMenu = [
   },
   {
     id: 2,
-    label: 'Juegos',
-    link: '/games',
+    label: 'Partidos',
+    link: '/matches',
     icon: ''
   },
   {
     id: 3,
     label: 'Equipos',
-    link: '/team',
+    link: '/teams',
     icon: ''
   },
   {
-    id: 1,
+    id: 4,
     label: 'Jugadores',
     link: '/players',
     icon: ''
@@ -47,16 +46,9 @@ function App() {
           <FcLayoutNav navigation={FecofaMenu}/>
         </div>
         <div className="fc-content">
-          <FcLayoutHeader></FcLayoutHeader>
+          <FcLayoutHeader />
           <main className="fc-content_main">
-            <Switch>
-              <Route path="/test">
-                <TestPage />
-              </Route>
-              <Route path="/">
-                <HomePage />
-              </Route>
-            </Switch>
+           <Pages />
           </main>
         </div>
       </div>

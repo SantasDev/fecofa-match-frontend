@@ -1,11 +1,11 @@
 import React from 'react';
 import SectionNavigation from './SectionNavigation';
 
-const Layout = ()=>(
+const LayoutHeader = (prop )=>(
     <header className="fc_header" >
-        <h1 className="fc_title" > FECOFA </h1>
-        <SectionNavigation />
+        <h1 className="fc_title" > {prop.page.label} </h1>
+        <SectionNavigation sections={ prop.page.sections }/>
     </header>
 );
 
-export default Layout;
+export default LayoutHeader;

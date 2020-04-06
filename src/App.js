@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router} from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -14,7 +14,10 @@ library.add(fab, faCheckSquare, faCoffee)
 
 function App() {
 
-function App() {
+  const [actualPage, setActualPage] = useState(FecofaMenu[0]);
+  useEffect( ()=>{
+    setActualPage(FecofaMenu[Math.floor(Math.random() * FecofaMenu.length)]);
+  },[]);
   return (
     <Router>
       <div className="App">
@@ -22,7 +25,7 @@ function App() {
           <FcLayoutNav navigation={FecofaMenu}/>
         </div>
         <div className="fc-content">
-          <FcLayoutHeader page={FecofaMenu[3]} />
+          <FcLayoutHeader title={actualPage.label} sections={actualPage.sections} />
           <main className="fc-content_main">
            <Pages />
           </main>
